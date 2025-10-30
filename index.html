@@ -38,6 +38,7 @@
     button {
       padding: 12px 25px;
       border: none;
+      flex-wrap: wrap;
       border-radius: 8px;
       background: #fff;
       font-size: 1rem;
@@ -56,6 +57,14 @@
     button:active {
       transform: scale(0.97);
     }
+    @media (max-width: 500px) {
+
+.button-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+}
   </style>
 
   <script>
@@ -73,6 +82,7 @@
     <button onclick="setColor('gold')">Yellow</button>
         <button onclick="setColor('blue')">Blue</button>
         <button onclick="setColor('pink')">pink</button>
+            <button onclick="setColor('black')">Black</button>
   </div>
 </body>
 </html>
